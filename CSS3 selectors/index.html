@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* element selector */
+        div {
+            background-color: red;
+            color: beige;
+        }
+
+        .me {
+            background-color: green;
+            color: beige;
+            /* class selector */
+        }
+
+        #you {
+            background-color: blue;
+            color: beige;
+            /* id selector */
+        }
+
+        div>p {
+            color: thistle;
+            background-color: chocolate;
+            /* child selector */
+        }
+
+        /*div + p {color: thistle; background-color: chocolate;}*/
+        div p {
+            color: pink;
+            background-color: black;
+            /* descendent selector */
+        }
+        *{
+            margin: 10;
+            padding: 10;
+            /* universal selector */
+        }
+        a:visited{color: violet; background-color: brown;}
+        a:link{color: red;}
+        a:active{background-color: yellowgreen;}
+        a:hover{color: green;}
+        p:first-child{color: aqua; background-color: blue;}
+        /* pseudo class selector */
+    </style>
+</head>
+
+<body>
+    <main>
+        <p>i am 1st child</p>
+        <p>i am 2nd child</p>
+    </main>
+    <div class="me">I am a divv</div>
+    <!-- <div><p>finally i'm a child of divv</p></div> -->
+    <div> I am another divv
+        <p>and i'm the child inside divv ie p</p>
+    </div>
+    <div id="you">triplw divv me</div>
+    
+    <div class="me">
+        <article>
+            <p> i m divv x4 inside para of inside article </p>
+        </article>
+    </div>
+  <a href="https://www.google.com">google dekho</a>
+  <a href="https://www.quora.com">quora dekho</a>
+
+
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*.parent{
+        position: relative;
+        display: flex;
+        width: 350px;
+        height: 550px; 
+        background-color: white;
+        border-radius: 12px;
+        padding: 20px;
+        margin: 20px auto;
+        border: 2px solid gray; 
+    }
+        .box1 img {
+           position: flex;
+         width: 100%;
+            top: 900px;
+            left: 200px;
+            top: 9px;
+            height: auto;
+            overflow: hidden;
+        }*/
+        .parent {
+            position: relative;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 6px;
+            width: 350px;
+            height: 480px;
+            background-color: white;
+            border-radius: 12px;
+            margin: 20px auto;
+            border: 2px solid gray;
+            overflow: hidden;
+            row-gap: 20px;
+        }
+
+        .box1 img {
+            /* max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;*/
+            display: flex;
+            width: 350px;
+            height: 250px;
+            border-radius: 12px;
+        }
+
+        /* html {
+            overflow: hidden;
+        }*/
+        .things {
+            display: flex;
+            width: 100%;
+            column-gap: 10px;
+        }
+
+        .box2 {
+            display: flex;
+            border-radius: 7px;
+            border-color: gray;
+            /*  box-sizing: border-box;*/
+            border-width: 0.1vw;
+            border-style: solid;
+            width: 50px;
+            height: 15px;
+            font-size: small;
+            justify-content: center;
+            color: gray;
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            align-self: first baseline;
+
+        }
+
+        .box3 {
+            display: flex;
+            border-radius: 7px;
+            border-color: gray;
+            border-width: 0.1vw;
+            border-style: solid;
+            width: 40px;
+            height: 15px;
+            font-size: small;
+            justify-content: center;
+            color: gray;
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .box4 {
+            display: flex;
+            font-style: bold;
+            font-size: xx-large;
+            color: black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            align-self: first baseline;
+
+        }
+
+        .box5 {
+            display: flex;
+            /* left: 600px;
+            top: 150px;
+            box-sizing: border-box;*/
+
+            font-size: medium;
+            color: gray;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .box6 button{
+            display: flex;
+            width: 100px;
+            height: 30px;
+            background-color: skyblue;
+            color: blue;
+            border-radius: 100px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            justify-content: center;
+            font-size: medium;
+            align-self: center;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box1"><img src="harrypotter.webp" alt="harry potter" width="200px" height="100px"></div>
+        <div class="things">
+            <div class="box2">Nature</div>
+            <div class="box3">Lake</div>
+        </div>
+        <div class="box4">Lago di Braies</div>
+        <div class="box5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque magni modi accusamus libero
+            facilis! Quaerat, dolore. Quo, hic.</div>
+        <div class="box6"><button>Read More</button></div>
+    </div>
+</body>
+
+</html>

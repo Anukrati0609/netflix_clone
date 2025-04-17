@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css disp prop</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid black;
+            /*display: inline;*/
+            display: inline-block;
+            padding:40px; 
+            width: 344px;
+            margin: 34px;
+            /*display="none" means this whole thing won't sisplay*/
+            /*if visibility="none", the space will become empty only the contents will disappear*/
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">i'm box and block display</div>
+    <div class="box">also another block elemtnt</div>
+    <span>i'm inline elementt</span>
+    <span>you know it n</span>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/display -->
+</body>
+
+</html>

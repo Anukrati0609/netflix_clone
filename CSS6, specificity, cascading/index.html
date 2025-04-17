@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: green !important;
+            /*the specificity of element selector is 1*/
+        }
+
+        .yellow {
+            color: yellow;
+            /*specificity of all class selector is 10*/
+        }
+
+        .cred {
+            color: red;
+        }
+
+        .cpurple {
+            color: purple;
+        }
+
+        [data-x="a"] {
+            background-color: blue;
+        }
+
+        /*this is attribute selector. specificity=10*/
+        /*a.harryclss.rohan-class[href]:hover{color:red}
+        specificity would be 1+10+10+10+10*/
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 style="color: brown;" class="yellow cred cpurple" data-x="a">this is called specificity</h1>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <style>
+        :root {
+            --color: green;
+            --seccolor: darkgreen;
+        }
+
+        /*.nav{
+    background-color: lightgreen;
+    width: 100%;
+}*/
+        body {
+            background-color: lightgreen;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            padding: 0px;
+            height: 50px;
+            width: 100%;
+            margin: 0px;
+            column-gap: 200px;
+            background-color: var(--color);
+            color: white;
+            font-size: large;
+            overflow: hidden;
+            padding-left: 20px;
+        }
+        a{
+            color: white;
+        }
+         a:hover{
+            color: aqua;
+
+        }
+        a:visited{
+            color: wheat;
+        }
+
+        li {
+            display: block;
+            margin: 0px;
+            padding: 0px;
+            left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li> <a href="https://www.google.com">Google</a></li>
+            <li><a href="https://www.wikipedia.com">Wikipedia</a></li>
+            <li><a href="https://www.youtube.com">Youtube</a></li>
+            <li><a href="https://www.linkedin.com">Linkedin</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

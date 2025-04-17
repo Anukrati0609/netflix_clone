@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box:first-child {
+            background-color: red;
+        }
+
+        .box::first-line {
+            color: aqua;
+        }
+
+        /*.boxes *{
+            color: green;
+            border: 2px solid black;
+        }
+        p,a,.box,[data-color="primary"]{
+            margin-top: 45px;}
+            /*attribute selector*/
+
+        /*.box:nth-child(even){
+        background-color: blue;
+    }*/
+        .boxes::before {
+            content: "me is goos";
+        }
+
+        ::selection {
+            color: bisque;
+            background-color: brown;
+        }
+
+        .box::first-letter {
+            color: pink;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo minima magni
+            corrupti aut nisi nostrum asperiores quam provident, dolore aperiam itaque autem officia vel totam nam alias
+            reiciendis ad repudiandae incidunt reprehenderit, dolor natus! Voluptatibus explicabo, expedita quaerat
+            eligendi et, minima quis nostrum qui voluptate eveniet illo officiis! Asperiores inventore deleniti earum
+            commodi, sed repellat pariatur.</div>
+        <div class="box">me a box</div>
+        <div class="box">me a box</div>
+    </div>
+</body>
+
+</html>
